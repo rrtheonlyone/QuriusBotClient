@@ -11,29 +11,30 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
   </head>
   <body>
-    <div id="container">
-      <div class="row" id="header">
+    <div id="container" class="quiz-page">
+      <div class="row darkbox" id="header">
         <img src="./images/search.png">
         <h2 class="title">QuriousBot</h2>
       </div>
 
-      <div class="segment">
-        <div class="row" id="summary">
-          <img src="./images/quiz.png">
-          <h4 class="title">Quiz</h4>
+      <div id="bluebox">
+        <div class="segment">
+          <div class="row" id="summary">
+            <img src="./images/quiz.png">
+            <h4 class="title">Quiz</h4>
+          </div>
+          <div id="quiz" class="card">
+            <p>asdf</p>
+          </div>
         </div>
-        <div>
-          <ul>
-            <li>Question number 1</li>
-            <li>Question number 2</li>
-            <li>Question number 3</li>
-            <li>Question number 4</li>
-            <li>Question number 5</li>
-          </ul>
-        </div>
-      </div>
 
-      <a href="popup.html"><button id="back_to_summary" class="btn _button">Back to summary</button></a>
+        <button class="btn answer" id="correct">Correct</button>
+        <button class="btn answer" id="incorrect">Incorrect</button>
+
+        <a id="next">Next?</a>
+
+        <a href="popup.html"><button id="back_to_summary" class="btn _button">Back to summary</button></a>
+      </div>
     </div>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
