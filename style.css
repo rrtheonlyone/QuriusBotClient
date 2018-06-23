@@ -1,4 +1,37 @@
 body {
   width: 400px;
   height: 580px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#container {
+	height: 580px;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 30px;
+}
+
+#header {
+	display: flex;
+	align-items: center;
+}
+
+img {
+	float: left;
+	height: 20px;
+	width: 20px;
+	margin-right: 10px;
+}
+
+#title {
+	min-height: 20px;
+	position: relative;
+}
+
+#summary {
+	margin-bottom: 20px;
+	border-top: 1px solid black;
 }
