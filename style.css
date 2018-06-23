@@ -6,7 +6,8 @@ body {
 }
 
 #container {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 	height: 580px;
 	margin-top: 0;
 	margin-bottom: 0;
