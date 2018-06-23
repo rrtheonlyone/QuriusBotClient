@@ -1,4 +1,33 @@
 body {
   width: 400px;
   height: 580px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#container {
+	font-family: 'Roboto', sans-serif;
+	height: 580px;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 30px;
+}
+
+.row {
+	display: flex;
+	align-items: center;
+}
+
+img {
+	float: left;
+	height: 20px;
+	width: 20px;
+	margin-right: 10px;
+}
+
+#summary {
+	padding-top: 10px;
+	border-top: 0.7px solid lightgray;
 }
