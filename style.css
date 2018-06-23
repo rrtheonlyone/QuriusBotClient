@@ -40,16 +40,22 @@ ul {
 	padding-left: 32px;
 }
 
+li, p {
+	font-size: 14px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
 #links {
 	padding-left: 17px;
 }
 
 .link {
-	margin-bottom: 0;
+	margin-bottom: 5px;
 }
 
 ._button {
 	background-color: #6bd7e7;
-	box-shadow: 0px 2px 2px rgba(219,31,5,1), 
-							0px 2px 2px rgba(0,0,0,.7);
+	box-shadow: 2px 2px 1px 1px #2190a1, 
+							2px 2px 1px 1px #2190a1;
 }
