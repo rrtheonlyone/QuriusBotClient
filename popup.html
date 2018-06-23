@@ -11,38 +11,47 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
   <body>
     <div id="container">
-      <div id="header">
+      <div class="row" id="header">
         <img src="./images/search.png">
         <h2 id="title">Title of Article</h2>
       </div>
-
-      <div id="summary">
-        <ul>
-          <li>Point number 1</li>
-          <li>Point number 2</li>
-          <li>Point number 3</li>
-          <li>Point number 4</li>
-          <li>Point number 5</li>
-        </ul>
+      
+      <div>
+        <div class="row" id="summary">
+          <img src="./images/computer.png">
+          <h4>Summary</h4>
+        </div>
+        <div>
+          <ul>
+            <li>Point number 1</li>
+            <li>Point number 2</li>
+            <li>Point number 3</li>
+            <li>Point number 4</li>
+            <li>Point number 5</li>
+          </ul>
+        </div>
       </div>
+      <a href="quiz.html"><button id="generate_quiz">Generate quiz here!</button></a>
 
-      <button id="checkPage">Generate quiz here!</button>
-
-      <div id="related_links">
-        <p>Related links:</p>
-        <ul>
-          <li>Link number 1</li>
-          <li>Link number 2</li>
-          <li>Link number 3</li>
-          <li>Link number 4</li>
-          <li>Link number 5</li>
-        </ul>
+      <div>
+        <div class="row" id="related_links">
+          <img src="./images/link.png">
+          <h4>Related links</h4>
+        </div>
+        <div>
+          <p>Link number 1</p>
+          <p>Link number 2</p>
+          <p>Link number 3</p>
+          <p>Link number 4</p>
+          <p>Link number 5</p>
+        </div>
       </div>
     </div>
-
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

@@ -6,15 +6,16 @@ body {
 }
 
 #container {
+	font-family: 'Roboto', sans-serif;
 	height: 580px;
 	margin-top: 0;
 	margin-bottom: 0;
-	padding-left: 30px;
-	padding-right: 30px;
+	padding-left: 50px;
+	padding-right: 50px;
 	padding-top: 30px;
 }
 
-#header {
+.row {
 	display: flex;
 	align-items: center;
 }
@@ -26,12 +27,7 @@ img {
 	margin-right: 10px;
 }
 
-#title {
-	min-height: 20px;
-	position: relative;
-}
-
 #summary {
-	margin-bottom: 20px;
-	border-top: 1px solid black;
+	padding-top: 10px;
+	border-top: 0.7px solid lightgray;
 }
