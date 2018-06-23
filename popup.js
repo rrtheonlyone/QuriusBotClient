@@ -20,7 +20,7 @@ chrome.tabs.executeScript(
   function(results){ 
     getDataForSummary(results[0]).then((data) => {
       console.log(data);
-      document.getElementById("summary_content").append(data["data"]); 
+      document.getElementById("summary_content").append(data["summary"]); 
     });
   } 
 );
