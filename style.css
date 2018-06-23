@@ -18,6 +18,7 @@ body {
 .row {
 	display: flex;
 	align-items: center;
+	padding-top: 20px;
 }
 
 img {
@@ -28,6 +29,17 @@ img {
 }
 
 #summary {
-	padding-top: 10px;
 	border-top: 0.7px solid lightgray;
+}
+
+ul {
+	padding-left: 32px;
+}
+
+#links {
+	padding-left: 17px;
+}
+
+.link {
+	margin-bottom: 0;
 }
