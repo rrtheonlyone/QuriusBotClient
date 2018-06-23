@@ -4,16 +4,14 @@
   "name": "QuriusBot",
   "description": "This extension will summarise what is on the page and allow for analytics",
   "version": "1.0",
-
+  "permissions": [
+      "activeTab"
+  ],
   "browser_action": {
    "default_icon": "images/curious.png",
    "default_popup": "popup.html",
    "default_icon": {
         "128": "images/curious.png"
     }
-  },
-
-  "permissions": [
-   "activeTab"
-   ]
+  }
 }
