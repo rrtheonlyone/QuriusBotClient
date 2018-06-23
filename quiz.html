@@ -2,6 +2,9 @@
 <html>
   <head>
     <title>QuriousBot</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <script src="jquery.min.js"></script>
     <script src="quiz.js"></script>
@@ -20,22 +23,29 @@
       </div>
 
       <div id="bluebox">
+        <a href="popup.html"><button id="back_to_summary" class="btn _button">Back to summary</button></a>
+
         <div class="segment">
           <div class="row" id="summary">
             <img src="./images/quiz.png">
             <h4 class="title">Quiz</h4>
           </div>
           <div id="quiz" class="card">
-            <p>asdf</p>
+            <p id="question"></p>
           </div>
         </div>
-
+<!-- 
         <button class="btn answer" id="correct">Correct</button>
-        <button class="btn answer" id="incorrect">Incorrect</button>
+        <button class="btn answer" id="incorrect">Incorrect</button> -->
 
-        <a id="next" href="https://code.jquery.com">Next?</a>
+        <div>
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Show Answer</button>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body" id="answer">Test</div>
+          </div>
 
-        <a href="popup.html"><button id="back_to_summary" class="btn _button">Back to summary</button></a>
+          <a id="next" href="https://code.jquery.com">Next?</a>
+        </div>
       </div>
     </div>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
