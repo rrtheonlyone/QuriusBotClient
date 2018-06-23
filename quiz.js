@@ -1,11 +1,10 @@
-var checkPageButton = document.getElementById('checkPage');
 var API_BASE_URL = "http://localhost:5000"
 
-function getDataForSummary(html) {
+function getDataForQuiz(html) {
   var settings = {
       "async": true,
       "crossDomain": true,
-      "url": API_BASE_URL + '/summary',
+      "url": API_BASE_URL + '/quiz',
       "method": "POST",
       "data": {'data': html}
   }
@@ -18,11 +17,8 @@ chrome.tabs.executeScript(
   },
   
   function(results){ 
-    getDataForSummary(results[0]).then((data) => {
+    getDataForQuiz(results[0]).then((data) => {
       console.log(data);
-      document.getElementById("summary_content").append(data["data"]); 
     });
   } 
 );
-
-
