@@ -12,19 +12,20 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+    
   </head>
   <body>
     <div id="container">
       <div class="row" id="header">
         <img src="./images/search.png">
-        <h2 id="title">Title of Article</h2>
+        <h2 class="title">Title of Article</h2>
       </div>
       
       <div class="segment">
         <div class="row" id="summary">
           <img src="./images/computer.png">
-          <h4>Summary</h4>
+          <h4 class="title">Summary</h4>
         </div>
         <div>
           <ul>
@@ -36,12 +37,13 @@
           </ul>
         </div>
       </div>
-      <a href="quiz.html"><button id="generate_quiz">Generate quiz here!</button></a>
+
+      <a href="quiz.html"><button id="generate_quiz" class="btn _button">Generate quiz here!</button></a>
 
       <div class="segment">
         <div class="row" id="related_links">
           <img src="./images/link.png">
-          <h4>Related links</h4>
+          <h4 class="title">Related links</h4>
         </div>
         <div id="links">
           <p class="link">Link number 1</p>
@@ -51,7 +53,11 @@
           <p class="link">Link number 5</p>
         </div>
       </div>
+
+      <a href="dashboard.html"><button id="go_dashboard" class="btn _button">Visit dashboard</button></a>
+    
     </div>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
