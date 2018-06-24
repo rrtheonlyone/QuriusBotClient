@@ -28,12 +28,12 @@ chrome.tabs.executeScript(
 );
 
 function display_question() {
-  console.log(id)
   question_data = JSON.parse(questions[id]);
-  document.getElementById("question").innerHTML = question_data.question
-  	.replace(/\".*\n|\n.*\"/g, "");
+  question = question_data.question.replace(/(\\n)+/g, '');
+  question = question.replace(/(\\")+/g, '');
+  document.getElementById("question").innerHTML = question;
   document.getElementById("answer").innerHTML = question_data.answer;
-  id++;
+  id+=5;
 }
 
 document.addEventListener('DOMContentLoaded', function() {
