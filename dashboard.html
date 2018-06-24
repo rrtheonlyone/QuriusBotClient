@@ -2,6 +2,11 @@
 <html>
   <head>
     <title>QuriousBot</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="jquery.min.js"></script>
     <script src="popup.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
 
@@ -12,32 +17,36 @@
   </head>
   <body>
     <div id="container">
-      <div class="row" id="header">
+      <div class="row darkbox" id="header">
         <img src="./images/search.png" id="icon">
         <h2 class="title">QuriousBot</h2>
       </div>
 
-      <div class="segment">
-        <div class="row" id="summary">
-          <img src="./images/dash.png" id="icon">
-          <h4 class="title">Dashboard</h4>
+      <div class="segment whitebox">
+        <div>
+          <div class="row" id="summary">
+            <img src="./images/dash.png" id="icon">
+            <h4 class="title">Dashboard</h4>
+          </div>
           <h6>Today's research history...</h6>
           <img src="./images/pie2.png" width="350" height="200">
         </div>
         
-        <div class="row" id="summary">
-          <img src="./images/hour.png" id="icon">
-          <h4 class="title">Time</h4>
+        <div>
+          <div class="row" id="summary">
+            <img src="./images/hour.png" id="icon">
+            <h4 class="title">Time</h4>
+          </div>
           <h6>You have spent a total of...</h6>
           <h5>3 hours</h5>
+        </div>
           <!-- <h6>have passed since you started doing research! Don't forget to take some rest :)</h6> -->
       </div>
 
     </div>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
   </body>
 </html>
 

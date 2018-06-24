@@ -144,8 +144,16 @@ a.link:hover {
 	color: grey;
 }
 
-a#next:hover {
+#answer {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 20px;
+}
 
+button.btn.btn-primary {
+	outline: none !important;
+	border: none !important;
+	box-shadow: none !important;
 }
 
 #back_to_summary {
