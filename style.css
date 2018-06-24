@@ -34,6 +34,11 @@ img {
   
 }
 
+table {
+  width: 100%;
+  text-align: center;
+}
+
 #icon {
 	float: left;
 	height: 20px;
@@ -183,4 +188,13 @@ button.btn.btn-primary {
 #sub_title {
 	margin-top: 15px;
 	margin-left: 17px;
+}
+
+#statistics {
+	margin-top: 10px;
+}
+
+.num {
+	font-size: 40px;
+	font-weight: bold;
 }

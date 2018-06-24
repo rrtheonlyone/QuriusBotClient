@@ -22,46 +22,48 @@
         <h2 class="title">QuriousBot</h2>
       </div>
 
-      <div class="segment whitebox">
-        <div>
-          <div class="row" id="summary">
-            <img src="./images/dash.png" id="icon">
-            <h4 class="title">Dashboard</h4>
-          </div>
-          <!-- <h6 id="sub_title">Today's research history...</h6> -->
-          <img src="./images/pie2.png" width="320" height="200">
+      <div class="segment" id="bluebox">
+        <div class="row" id="summary">
+          <img src="./images/dash.png" id="icon">
+          <h4 class="title">Dashboard</h4>
         </div>
+        <img src="./images/bluepie1.png" width="320" height="190">
       </div>
         
-      <div id="bluebox" class="segment">
+      <div class="segment whitebox">
         <div class="row" id="summary">
-          <img src="./images/hour.png" id="icon">
+          <img src="./images/pie-chart.png" id="icon">
           <h4 class="title">Statistics</h4>
         </div>
         <table id="statistics">
           <tr>
             <td>
-              <div id="stats number1">3 hours</div>
-              <div id="stats stats_sub1">of research</div>
+              <div class="num" id="stats number1">3</div>
+              <div id="stats stats_sub1">hours of research</div>
             </td>
             <td>
-              <div id="stats number2">40 pages</div>
-              <div id="stats stats_sub2">read</div>
+              <div class="num" id="stats number2">40</div>
+              <div id="stats stats_sub2">pages read</div>
             </td>
           </tr>
           <tr>
             <td>
-              <div id="stats number3">96 questions</div>
-              <div id="stats stats_sub3">answered</div>
+              <div class="num" id="stats number3">96</div>
+              <div id="stats stats_sub3">questions answered</div>
             </td>
             <td>
-              <div id="stats number4">90%</div>
+              <div class="num" id="stats number4">90%</div>
               <div id="stats stats_sub4">correct answers</div>
             </td>
           </tr>
         </table>
       </div>
-          <!-- <h6>have passed since you started doing research! Don't forget to take some rest :)</h6> -->
+
+      <div class="segment">
+        <div class="row" id="go_dashboard">
+          <a href="popup.html"><img src="./images/computer.png" id="icon">Visit summary</a>
+        </div>
+      </div>
     </div>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
