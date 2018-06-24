@@ -58,7 +58,7 @@ chrome.tabs.executeScript(
   },
 
   function(results){
-    $(".front").html(`<div style="display:flex; justify-content:center;"><div class="loader"/></div>`);
+    $("#question_front").html(`<div style="display:flex; justify-content:center;"><div class="loader"/></div>`);
     fetchQuestions(results[0][0], results[0][1], (data) => {
       questions = data["data"];
       // console.log(data);
@@ -70,14 +70,14 @@ chrome.tabs.executeScript(
 
 function display_question() {
   if(next_id <= id || questions.length == 0) {
-    document.getElementsById("question_front")[0].innerHTML = "No more questions left";
-    document.getElementsById("answer_back")[0].innerHTML = "No answer";
+    document.getElementById("question_front").innerHTML = "No more questions left";
+    document.getElementById("answer_back").innerHTML = "No answer";
   } else {
     question_data = JSON.parse(questions[id]);
     question = question_data.question.replace(/(\\n)+/g, '');
     question = question.replace(/(\\")+/g, '');
-    document.getElementsById("question_front")[0].innerHTML = question;
-    document.getElementsById("answer_back")[0].innerHTML = question_data.answer;
+    document.getElementById("question_front").innerHTML = question;
+    document.getElementById("answer_back").innerHTML = question_data.answer;
     id = (id + 5) % questions.length;
     next_id = (next_id + 5) % questions.length;
   }
