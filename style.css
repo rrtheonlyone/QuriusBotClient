@@ -34,6 +34,11 @@ img {
   
 }
 
+table {
+  width: 100%;
+  text-align: center;
+}
+
 #icon {
 	float: left;
 	height: 20px;
