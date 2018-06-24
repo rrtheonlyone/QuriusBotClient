@@ -2,6 +2,11 @@ var API_BASE_URL = "http://localhost:5000"
 var questions = [];
 var id = 0;
 
+$('#card').flip({
+  axis: 'y',
+  trigger: 'click'
+});
+
 function getDataForQuiz(html) {
   var settings = {
       "async": true,
@@ -27,17 +32,18 @@ chrome.tabs.executeScript(
   } 
 );
 
-function display_question() {
-  console.log(id)
-  question_data = JSON.parse(questions[id]);
-  document.getElementById("question").innerHTML = question_data.question
-  	.replace(/\".*\n|\n.*\"/g, "");
-  document.getElementById("answer").innerHTML = question_data.answer;
-  id++;
-}
+// function display_question() {
+//   // question_data = JSON.parse(questions[id]);
+//   // question = question_data.question.replace(/(\\n)+/g, '');
+//   // question = question.replace(/(\\")+/g, '');
+//   // document.getElementById("question").innerHTML = question;
+//   // document.getElementById("answer").innerHTML = question_data.answer;
+//   // id+=5;
 
-document.addEventListener('DOMContentLoaded', function() {
-	$('#nextButton').on('click', function(event) {
-	  display_question()
-	});
-});
+// }
+
+// document.addEventListener('DOMContentLoaded', function() {
+// 	$('#nextButton').on('click', function(event) {
+// 	  display_question()
+// 	});
+// });
