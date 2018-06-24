@@ -3,7 +3,9 @@ var questions = [];
 var id = 0;
 
 $(document).on('ready', function() {
-  $(".flip").flip();
+  $(".flip").flip({
+    forceHeight: true
+  });
 });
 
 
