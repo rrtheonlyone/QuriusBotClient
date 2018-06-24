@@ -70,14 +70,14 @@ chrome.tabs.executeScript(
 
 function display_question() {
   if(next_id <= id || questions.length == 0) {
-    document.getElementsByClassName("front")[0].innerHTML = "No more questions left";
-    document.getElementsByClassName("back")[0].innerHTML = "No answer";
+    document.getElementsById("question_front")[0].innerHTML = "No more questions left";
+    document.getElementsById("answer_back")[0].innerHTML = "No answer";
   } else {
     question_data = JSON.parse(questions[id]);
     question = question_data.question.replace(/(\\n)+/g, '');
     question = question.replace(/(\\")+/g, '');
-    document.getElementsByClassName("front")[0].innerHTML = question;
-    document.getElementsByClassName("back")[0].innerHTML = question_data.answer;
+    document.getElementsById("question_front")[0].innerHTML = question;
+    document.getElementsById("answer_back")[0].innerHTML = question_data.answer;
     id = (id + 5) % questions.length;
     next_id = (next_id + 5) % questions.length;
   }
