@@ -62,6 +62,7 @@ h4.title {
   font-size: 14px;
   margin-top: 10px;
   margin-bottom: 10px;
+  text-align: left;
 }
 
 td {
@@ -164,7 +165,7 @@ button#back_to_summary.btn._button {
 
 .card-block {
 	height: 100px;
-	overflow-y: auto;
+	overflow-y: scroll;
 }
 
 #nextButton {
