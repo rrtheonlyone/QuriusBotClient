@@ -25,6 +25,7 @@ chrome.tabs.executeScript(
   },
   
   function(results){ 
+    $(".front").html(`<div style="display:flex; justify-content:center;"><div class="loader"/></div>`);
     getDataForQuiz(results[0]).then((data) => {
       console.log(data);
       questions = data["data"];
