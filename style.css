@@ -89,6 +89,12 @@ a.link:hover {
 
 #go_dashboard {
 	margin-bottom: 30px;
+	margin-left: 35px;
+}
+
+#go_dashboard a {
+	color: grey;
+	margin-left: 2px;
 }
 
 .darkbox {
@@ -158,12 +164,26 @@ a.link:hover {
 	color: grey;
 }
 
-a#next:hover {
+#answer {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 20px;
+}
 
+button.btn.btn-primary {
+	outline: none !important;
+	border: none !important;
+	box-shadow: none !important;
 }
 
 #back_to_summary {
 	margin-top: 27px;
 	margin-bottom: 15px;
 	margin-left: 0;
+}
+
+
+#sub_title {
+	margin-top: 15px;
+	margin-left: 17px;
 }
