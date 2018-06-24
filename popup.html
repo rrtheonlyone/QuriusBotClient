@@ -6,66 +6,71 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+
+	  <script src="jquery.min.js"></script>
     <script src="popup.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
     
   </head>
   <body>
     <div id="container">
-      <div class="row" id="header">
+      <div class="row darkbox" id="header">
         <img src="./images/search.png" id="icon">
         <h2 class="title">QuriousBot</h2>
       </div>
       
-      <div class="segment">
-        <div class="row" id="summary">
-          <img src="./images/computer.png" id="icon">
-          <h4 class="title">Summary</h4>
-        </div>
-        <div>
-          <ul>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
-            <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-            <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
-            <li>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
-            <li>Vitae aliquet nec ullamcorper sit amet. Ut tortor pretium viverra suspendisse.</li>
-          </ul>
+      <div id="bluebox">
+        <a href="quiz.html"><button id="generate_quiz" class="btn _button">Generate quiz here!</button></a>
+        <div class="segment">
+          <div class="row" id="summary">
+            <img src="./images/computer.png" id="icon">
+            <h4 class="title">Summary</h4>
+          </div>
+          <div>
+            <p id="summary_content">
+            </p>
+          </div>
         </div>
       </div>
-
-      <a href="quiz.html"><button id="generate_quiz" class="btn _button">Generate quiz here!</button></a>
-
-      <div class="segment">
-        <div class="row" id="related_links">
-          <img src="./images/link.png" id="icon">
-          <h4 class="title">Related links</h4>
+      
+      <div class="whitebox">
+        <div class="segment">
+          <div class="row" id="related_links">
+            <img src="./images/link.png" id="icon">
+            <h4 class="title">Related links</h4>
+          </div>
+          <table id="links">
+            <tr>
+              <td><a class="link" href="https://fonts.googleapis.com">The birds filling up with plastic (BBC)</a></td>
+            </tr>
+            <tr>
+              <td><a class="link" href="https://fonts.googleapis.com">Malaysian politician Anwar Ibrahim in hospital for back pain (Straits Times)</a></td>
+            </tr>
+            <tr>
+              <td><a class="link" href="https://fonts.googleapis.com">An app to help blind people to 'see' (BBC)</a></td>
+            </tr>
+            <tr>
+              <td><a class="link" href="https://fonts.googleapis.com">Protect your toaster from cyber-attack (BBC)</a></td>
+            </tr>
+            <tr>
+              <td><a class="link" href="https://fonts.googleapis.com">Germany vs. Sweden: World Cup 2018 Live (New York Times)</a></td>
+            </tr>
+          </table>
         </div>
-        <div id="links">
-          <a class="link" href="https://fonts.googleapis.com">The birds filling up with plastic (BBC)</a>
-          <br/>
-          <a class="link" href="https://fonts.googleapis.com">Malaysian politician Anwar Ibrahim in hospital for back pain (Straits Times)</a>
-          <br/>
-          <a class="link" href="https://fonts.googleapis.com">An app to help blind people to 'see' (BBC)</a>
-          <br/>
-          <a class="link" href="https://fonts.googleapis.com">Protect your toaster from cyber-attack (BBC)</a>
-          <br/>
-          <a class="link" href="https://fonts.googleapis.com">Germany vs. Sweden: World Cup 2018 Live (New York Times)</a>
-        </div>
+
+        <a href="dashboard.html"><button id="go_dashboard" class="btn _button">Visit dashboard</button></a>
       </div>
-
-      <a href="dashboard.html"><button id="go_dashboard" class="btn _button">Visit dashboard</button></a>
-    
     </div>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
   </body>
 </html>
 

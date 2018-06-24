@@ -2,7 +2,12 @@
 <html>
   <head>
     <title>QuriousBot</title>
-    <script src="popup.js"></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="jquery.min.js"></script>
+    <script src="quiz.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <!-- Bootstrap CSS -->
@@ -11,34 +16,42 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
   </head>
   <body>
-    <div id="container">
-      <div class="row" id="header">
+    <div id="container" class="quiz-page">
+      <div class="row darkbox" id="header">
         <img src="./images/search.png" id="icon">
         <h2 class="title">QuriousBot</h2>
       </div>
 
-      <div class="segment">
-        <div class="row" id="summary">
-          <img src="./images/quiz.png" id="icon">
-          <h4 class="title">Quiz</h4>
+      <div id="bluebox">
+        <a href="popup.html"><button id="back_to_summary" class="btn _button">Back to summary</button></a>
+
+        <div class="segment">
+          <div class="row" id="summary">
+            <img src="./images/quiz.png" id="icon">
+            <h4 class="title">Quiz</h4>
+          </div>
+          <div id="quiz" class="card">
+              <p id="question"></p>
+          </div>
         </div>
+<!-- 
+        <button class="btn answer" id="correct">Correct</button>
+        <button class="btn answer" id="incorrect">Incorrect</button> -->
+
         <div>
-          <ul>
-            <li>Question number 1</li>
-            <li>Question number 2</li>
-            <li>Question number 3</li>
-            <li>Question number 4</li>
-            <li>Question number 5</li>
-          </ul>
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Show Answer</button>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body" id="answer"></div>
+          </div>
+
+          <button id="nextButton" class="btn btn-primary" type="button" aria-expanded="false" aria-controls="collapseExample">Next</button>
         </div>
       </div>
-
-      <a href="popup.html"><button id="back_to_summary" class="btn _button">Back to summary</button></a>
     </div>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
   </body>
 </html>
 
