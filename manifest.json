@@ -5,7 +5,8 @@
   "description": "This extension will summarise what is on the page and allow for analytics",
   "version": "1.0",
   "permissions": [
-      "activeTab"
+      "activeTab",
+      "storage"
   ],
   "browser_action": {
    "default_icon": "images/curious.png",
