@@ -9,7 +9,7 @@
   ],
   "browser_action": {
    "default_icon": "images/curious.png",
-   "default_popup": "popup.html",
+   "default_popup": "dashboard.html",
    "default_icon": {
         "128": "images/curious.png"
     }
