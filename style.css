@@ -73,7 +73,7 @@ a.link:hover {
 
 ._button {
 	background-color: #6bd7e7;
-	box-shadow: 2px 2px 1px 1px #2190a1, 
+	box-shadow: 2px 2px 1px 1px #2190a1,
 							2px 2px 1px 1px #2190a1;
 	margin-left: 13px;
 }
@@ -89,6 +89,12 @@ a.link:hover {
 
 #go_dashboard {
 	margin-bottom: 30px;
+	margin-left: 35px;
+}
+
+#go_dashboard a {
+	color: grey;
+	margin-left: 2px;
 }
 
 .darkbox {
@@ -96,10 +102,10 @@ a.link:hover {
 	padding-left: 50px;
 	padding-right: 50px;
 	box-shadow: 0px 2px 3px grey,
-              inset 1px -3px 3px -1px lightgrey;	
+              inset 1px -3px 3px -1px lightgrey;
 }
 
-#bluebox { 
+#bluebox {
 	width: 430px;
 	background-color: #dbf2f0;
 	padding-left: 50px;
@@ -120,6 +126,20 @@ a.link:hover {
 .quiz-page div#bluebox {
 	width: 100%;
 	height: 90%;
+}
+
+.loader {
+  border: 2px solid #f3f3f3; /* Light grey */
+  border-top: 2px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 #quiz {
@@ -160,4 +180,10 @@ button.btn.btn-primary {
 	margin-top: 27px;
 	margin-bottom: 15px;
 	margin-left: 0;
+}
+
+
+#sub_title {
+	margin-top: 15px;
+	margin-left: 17px;
 }
