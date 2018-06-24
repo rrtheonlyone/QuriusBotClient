@@ -4,9 +4,7 @@ var id = 0;
 var next_id = 5;
 
 $(document).on('ready', function() {
-  $(".flip").flip({
-    forceHeight: true
-  });
+  $(".flip").flip();
 });
 
 
