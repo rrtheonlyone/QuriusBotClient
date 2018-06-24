@@ -6,8 +6,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <script src="jquery.min.js"></script>
+    <script src="jquery-2.1.4.min.js"></script>
+    <script src="jquery.flip.min.js"></script>
     <script src="quiz.js"></script>
+    
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <!-- Bootstrap CSS -->
@@ -25,29 +27,20 @@
       <div id="bluebox">
         <a href="popup.html"><button id="back_to_summary" class="btn _button">Back to summary</button></a>
 
-        <div class="segment">
-          <div class="row" id="summary">
-            <img src="./images/quiz.png" id="icon">
-            <h4 class="title">Quiz</h4>
-          </div>
-          <div id="quiz" class="card">
-              <p id="question"></p>
-          </div>
-        </div>
-<!-- 
-        <button class="btn answer" id="correct">Correct</button>
-        <button class="btn answer" id="incorrect">Incorrect</button> -->
 
-        <div>
-          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Show Answer</button>
-          <div class="collapse" id="collapseExample">
-            <div class="card card-body" id="answer"></div>
-          </div>
-
-          <button id="nextButton" class="btn btn-primary" type="button" aria-expanded="false" aria-controls="collapseExample">Next</button>
+        <div class="flip"> 
+          <div class="front"> 
+            Front content
+          </div> 
+          <div class="back">
+            Back content
+          </div> 
         </div>
+
+        <button id="nextButton" class="btn _button">Next</button>
       </div>
     </div>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="popper.min.js"></script>
